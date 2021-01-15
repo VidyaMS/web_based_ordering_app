@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+   <body>
+     <h2> Order List :</h2> 
+      <table border = 1>
+         <thead>
+            <td>Name</td>
+            <td>Quantity</td>
+            <td>Date</td>
+            
+         </thead>
+
+         {% for row in rows %}
+            <tr>
+               <td>{{row["name"]}}</td>
+               <td>{{row["quantity"]}}</td>
+               <td> {{ row["date"]}}</td>
+            </tr>
+         {% endfor %}
+      </table>
+
+      <a href = "/">Go back to home page</a>
+   </body>
+</html>
+

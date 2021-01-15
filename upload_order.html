@@ -1,0 +1,23 @@
+<html>
+   <body>
+     <h3> Upload an image for updating  the order list and mention the quantity needed </h3>
+      <form action = "http://localhost:5000/classify_and_update" method = "POST"
+         enctype = "multipart/form-data">
+         <input type = "file" name = "file" />
+         <label for "image_type" > Image Type </label>
+         <select id = 'image_type' name = "image_type">
+            <option value = '0' > dollar_bill </option>
+            <option value = '1' > dalmatian </option>
+            <option value = '2' > soccer ball </option>
+            <option value = '3' > pizza </option>
+            <option value = '4' > sunflower </option>
+         </select>
+         <br>
+         <label for "quantity" > Quantity  </label> 
+         <input type = 'text' id = "quantity" name = "quantity">
+         <br>
+         <input type = "submit"/>
+      </form>
+   </body>
+</html>
+
